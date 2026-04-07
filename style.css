@@ -107,17 +107,17 @@ body {
     padding: 30px;
 }
 /* ===============================
-   PARTENAIRES
+   PARTENAIRES – TAILLE UNIFORME
 =============================== */
 
 .partners-grid {
-    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 40px;
     justify-items: center;
 }
 
+/* Carré identique pour TOUS les logos */
 .partners-grid a {
     width: 160px;
     height: 160px;
@@ -136,8 +136,11 @@ body {
     transform: translateY(-4px);
 }
 
+/* ✅ CONTRÔLE STRICT DES LOGOS */
 .partners-grid img {
     max-width: 120px;
-    max-height: 70px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
     object-fit: contain;
 }
