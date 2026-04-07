@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Candéliance | Références</title>
 
-    <!-- CSS -->
+    <!-- Lien CSS obligatoire -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,9 +24,9 @@
 <section class="section">
     <h2>Nos références</h2>
     <p>
-        Candéliance accompagne les collectivités dans des projets d’éclairage public
-        et d’aménagement urbain, en plaçant l’usage, la sobriété énergétique
-        et l’intégration paysagère au cœur de chaque réalisation.
+        Candéliance accompagne les collectivités dans des projets
+        d’éclairage public et d’aménagement urbain, en privilégiant
+        l’usage, la sobriété énergétique et l’intégration paysagère.
     </p>
 </section>
 
@@ -37,26 +37,30 @@
     <div class="projects-grid">
 
         <div class="project-card">
-            <img src="azuly_photo.png" alt="Éclairage promenade littorale">
+            <a href="#lightbox-azuly">
+                <img src="azuly_photo.png" alt="Promenade littorale - Éclairage public">
+            </a>
             <h3>Promenade littorale</h3>
             <p>Étude et mise en lumière d’un espace public en bord de mer.</p>
         </div>
 
-        <!-- Tu pourras ajouter d’autres projets ici -->
-        <!--
-        <div class="project-card">
-            <img src="photon class="section">
+    </div>
+</section>
+
+<!-- ================= AMÉNAGEMENT URBAIN ================= -->
+<section class="section">
     <h2>Aménagement urbain</h2>
 
     <div class="projects-grid">
 
         <div class="project-card">
-            <img src="amenagement_urbain_exemple.png" alt="Aménagement espace public">
+            <a href="#lightbox-amenagement">
+                <img src="amenagement_urbain_exemple.png" alt="Aménagement urbain">
+            </a>
             <h3>Espace public structurant</h3>
-            <p>Intégration du mobilier urbain et structuration des cheminements.</p>
+            <p>Mobilier urbain et lisibilité des cheminements.</p>
         </div>
 
-        <!-- Autres projets à venir -->
     </div>
 </section>
 
@@ -64,6 +68,18 @@
     © Candéliance – Tous droits réservés
 </footer>
 
+<!-- ================= LIGHTBOX ================= -->
+<div id="lightbox-azuly" class="lightbox">
+    <a href="#">
+        <img src="azuly_photo.png" alt="Promenade littorale - vue agrandie">
+    </a>
+</div>
+
+<div id="lightbox-amenagement" class="lightbox">
+    <a href="#">
+        <img src="amenagement_urbain_exemple.png" alt="Aménagement urbain - vue agrandie">
+    </a>
+</div>
+
 </body>
 </html>
-``
