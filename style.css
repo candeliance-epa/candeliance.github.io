@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +6,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* BODY */
 body {
+    background: #ffffff;
     color: #444;
-    background: #fff;
 }
 
 /* HEADER */
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,23 +21,27 @@ header {
     border-bottom: 3px solid #003a7d;
 }
 
-header img {
-    height: 55px;
+.logo {
+    height: 60px;
 }
 
-nav a {
+.nav a {
     margin-left: 25px;
     text-decoration: none;
     font-weight: bold;
     color: #003a7d;
 }
 
+.nav a:hover {
+    color: #e6b64c;
+}
+
 /* HERO */
 .hero {
     background: #003a7d;
-    color: white;
+    color: #ffffff;
     text-align: center;
-    padding: 100px 40px;
+    padding: 120px 40px;
 }
 
 .hero h1 {
@@ -50,31 +56,42 @@ nav a {
 }
 
 /* SECTIONS */
-section {
-    max-width: 1200px;
+.content {
+    max-width: 1100px;
     margin: auto;
     padding: 80px 40px;
+    text-align: center;
 }
 
-section.alt {
+.content p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.content h2 {
+    color: #003a7d;
+    margin-bottom: 30px;
+}
+
+/* ALTERNATE SECTION */
+.alt {
     background: #f5f6f8;
 }
 
-section h2 {
-    margin-bottom: 40px;
-    color: #003a7d;
-}
-
-/* DOMAINES */
+/* FEATURES */
 .features {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
+    margin-top: 40px;
 }
 
 .feature {
-    background: white;
+    background: #ffffff;
     padding: 30px;
+    text-align: center;
 }
 
 .feature h3 {
@@ -83,9 +100,9 @@ section h2 {
 }
 
 /* FOOTER */
-footer {
+.footer {
     background: #003a7d;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 25px;
 }
