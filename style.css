@@ -144,3 +144,42 @@ body {
     height: auto;
     object-fit: contain;
 }
+/* ===============================
+   PAGE CONTACT
+=============================== */
+
+.section-contact {
+    text-align: center;
+}
+
+.contact-intro {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.contact-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+    border: 2px solid #003a7d;
+    background: #ffffff;
+}
+
+.contact-highlight {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #003a7d;
+    margin-bottom: 30px;
+}
+
+.contact-box a {
+    color: #003a7d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
