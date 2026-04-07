@@ -283,3 +283,7 @@ body {
     color: white;
     text-decoration: none;
 }
+/* Séparation claire des grandes catégories de références */
+.references-block {
+    margin-top: 80px;
+}
