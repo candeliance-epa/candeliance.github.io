@@ -86,10 +86,6 @@ body {
     background: #f5f6f8;
 }
 
-.references-block {
-    margin-top: 80px;
-}
-
 /* ===============================
    DOMAINES D’EXPERTISE (ACCUEIL)
 =============================== */
@@ -112,35 +108,54 @@ body {
 }
 
 /* ===============================
-   RÉFÉRENCES / PROJETS
+   PARTENAIRES (INCHANGÉ)
+=============================== */
+.partenaires-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.partenaires-grid a {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partenaires-grid img {
+    max-width: 140px;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+/* ===============================
+   RÉFÉRENCES — ISOLÉES (IMPORTANT)
+   👉 NE S’APPLIQUE QU’À RÉFÉRENCES
 =============================== */
 
-/* ✅ Grille FORCÉE À 2 COLONNES (desktop) */
-.projects-grid {
+/* La page références DOIT avoir la classe .references-page */
+.references-page .projects-grid {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2 cartes alignées */
     gap: 40px;
 }
 
-/* ✅ Mobile : 1 colonne */
 @media (max-width: 800px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .features {
+    .references-page .projects-grid {
         grid-template-columns: 1fr;
     }
 }
 
-.project-card {
+.references-page .project-card {
     background: #ffffff;
     text-align: center;
 }
 
-/* ✅ Images visibles, non coupées */
-.project-card img {
+.references-page .project-card img {
     width: 100%;
     height: 160px;
     object-fit: contain;
@@ -148,24 +163,23 @@ body {
     cursor: zoom-in;
 }
 
-.project-card h3 {
+.references-page .project-card h3 {
     margin: 20px 15px 10px;
     color: #003a7d;
 }
 
-.project-card p {
+.references-page .project-card p {
     margin: 0 15px 25px;
     font-size: 1rem;
 }
 
 /* ===============================
-   LIGHTBOX (AGRANDISSEMENT PHOTO)
+   LIGHTBOX (RÉFÉRENCES SEULEMENT)
 =============================== */
-
 .lightbox {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0,0,0,0.85);
     display: none;
     align-items: center;
     justify-content: center;
@@ -180,7 +194,7 @@ body {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
 }
 
 /* ===============================
