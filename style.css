@@ -287,3 +287,23 @@ body {
 .references-block {
     margin-top: 80px;
 }
+
+.catalog-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    background-color: #0B5FFF;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.catalog-button:hover {
+    background-color: #143A70;
+}
+
+.partner-card a {
+    text-decoration: none;
+}
+``
