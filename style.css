@@ -307,3 +307,29 @@ body {
     text-decoration: none;
 }
 ``
+.catalog-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #0B5FFF;
+    color: #0B5FFF;
+    transition: all 0.2s ease;
+}
+
+.catalog-icon:hover {
+    background-color: #0B5FFF;
+    color: white;
+}
+
+.catalog-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.partner-card {
+    text-align: center;
+}
