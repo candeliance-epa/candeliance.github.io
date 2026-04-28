@@ -333,3 +333,20 @@ body {
 .partner-card {
     text-align: center;
 }
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.reference-card {
+    background: white;
+    text-align: center;
+}
+
+.reference-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
