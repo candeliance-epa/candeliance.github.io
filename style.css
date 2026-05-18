@@ -333,3 +333,8 @@ body {
 .partner-card {
     text-align: center;
 }
+.section {
+    max-width: 1100px;
+    margin: auto;
+}
+``
